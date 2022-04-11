@@ -1,0 +1,1907 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+@import url('http://fonts.cdnfonts.com/css/lucida-blackletter');
+
+
+* {
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
+}
+
+* .fa{cursor: pointer;}
+* .fa:hover{box-shadow: 2px 2px 2px 2px rgba(236, 224, 201, .4);}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    background: #f1d6d6;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+::-webkit-scrollbar{
+    max-width: 2px;
+}
+.main-Container{
+    background: #f1d6d6;
+
+    }
+
+/*NAV BAR*/
+.navbar{
+    background: url(./image/bg/headerBg.svg);
+    background-repeat: repeat;
+    display: flex;
+
+}
+
+/*
+@media (max-width: 567px){
+    .navbar{
+        display: flex;
+        width: 100vw;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 2vw;
+    }
+
+}
+   */ 
+
+.navbar-brand{
+    height: 5rem;
+    width: 9rem;
+    flex-shrink: 2;
+}
+
+
+.navbar-brand .btn{
+    height: 95%;
+    width: 100%;
+}
+.navbar-brand .btn:hover{
+    filter: grayscale(100);
+
+}
+
+.navbar-brand .btn .img-fluid{
+    height: 100%;
+    width: 100%;
+}
+
+.busiName h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    text-decoration: none;
+    flex-shrink: 1;
+
+}
+
+.listhomebox ul li a{
+color: white;
+font-weight: 900;
+flex-shrink: 1;
+}
+.listhomebox ul li a:hover{
+    color: blue;
+    }
+
+.rounded-pill{
+    border: .56rem solid pink;
+    padding: .5rem 2rem;
+    background: pink;
+    width: 7rem;
+    height: 2rem;
+    flex-shrink: 1;
+    transition: all .5s ease-in-out;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.rounded-pill:hover{
+    background: rgb(146, 128, 132);
+}
+
+.navbar-toggler-icon .fa-bars{
+    font-size: 2rem;
+    color: blue;
+    transition: all .2s ease-in-out;
+}
+
+
+
+
+/* SECTION TWOO*/
+.middleContainerSection{
+    background: #f1d6d6;
+}
+.row{
+    background: #f1d6d6;
+}
+
+.mainBox{
+    border: 1px solid transparent;
+    flex-shrink: 1;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .3);
+    border-radius: 20px;
+    display: flex;
+    background: #f1d6d6;
+    height: 80vh;
+    transition: all .5s ease-in-out;
+
+}
+#firstBox{
+    flex-direction: column;
+
+
+}
+/*
+#middleBox{
+
+}
+*/
+
+#lastBox{
+background: url(image/bg/Footerbg.svg);
+
+}
+
+/*//////////////////////////INSIDE THE FIRST BOX//////////////////////////////////////////////////////////
+////////////////////////////////////////////////////*/
+
+/* the SOCIAL MEDIA LINKS HERE DOWN*/
+#firstBox .first-Adress{
+    flex-direction: column;
+    background: transparent;
+}
+
+#firstBox .first-Adress .social-link{
+    border: 1px solid #fabebe;
+    border-radius: 50%;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    transition: all .5s ease-in-out;
+    align-items: center;
+    height: 10rem;
+    }
+
+.first-Adress .social-link:hover{
+    background: #f8cccc;
+}
+
+.first-Adress .social-link::after{
+    content: "";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    border: 1px solid #fabebe;
+    animation: pulse1 2s infinite alternate;
+    transition-delay: 1s;
+}
+
+.first-Adress .social-link::before{
+    content: "";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: 1px solid #fabebe;
+    animation: pulse2 2s infinite alternate;
+    transition-delay: 2s;
+}
+
+@keyframes pulse1 {
+    0%{
+        opacity: 1;
+        height: 2rem;
+        width: 2rem;
+    }
+    100%{
+        opacity: 0;
+        height: 7rem;
+        width: 7rem;
+    }
+    
+}
+
+@keyframes pulse2 {
+    0%{
+        opacity: 0;
+        height: 7rem;
+        width: 7rem;
+    }
+    100%{
+        opacity: 1;
+        height: 2rem;
+        width: 2rem;
+    }
+}
+
+.first-Adress .social-link  a{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    background: #fabebe;
+    border: none;
+    text-decoration: none;
+
+    }
+
+.first-Adress .social-link a:hover{
+    background: white;
+    border: 1px solid black;
+    transition: all .5s ease;
+    }
+
+.first-Adress .social-link a .fa{font-size: 2rem;}
+.first-Adress .social-link .fb{
+    top: -1.5rem;  
+    color: blue;  
+    }
+
+.first-Adress .social-link .ig{
+right: -1.5rem;
+color: rgb(173, 3, 117);
+}
+
+.first-Adress .social-link .tsapp{
+left: -1.5rem;
+color: green;
+}
+
+.first-Adress .social-link .call{
+bottom: -1.5rem;
+color: green;
+}
+
+
+
+/*..............services ADVERTIZEMENT SECTION-----------------------------*/
+
+.servicesLeft{
+    flex-direction: column;
+    justify-content: space-between;
+    bottom: 2rem !important;
+}
+
+#firstBox .servicesLeft h3{
+    width: 100%;
+    color: hsla(0, 0%, 0%, .9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    font-family: "lucida blackletter" !important;
+    }
+
+
+#slideBox{
+    height: 100%;
+    width: 100%;
+}
+
+.myLeftSlides{
+    flex-direction: column;
+    height: 90%;
+    width: 100%;
+    display: none; 
+    justify-content: flex-start; 
+    align-items: center;
+}
+
+
+.myLeftSlides .img-fluid{
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        top: 4rem !important;
+        max-width: 100%;
+        max-height: 100%;
+
+            }
+
+.caption-text{background-color: white;
+        z-index: 1;
+        padding: 1px;
+        position: absolute;
+        width: 100%;
+        display: flex;
+        top: 0;
+        left: 0;
+        height: 4rem;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 5px;}
+
+.caption-text span{
+    color: black;
+    width: 100%;
+    flex-shrink: 1;
+    flex-grow: 1;
+    font-size: 1rem;
+    font-weight: bolder;
+    font-style: oblique;
+        }
+
+.myLeftSlides:nth-child(even)  .caption-text span{
+color: blue;
+    }
+.myLeftSlides:nth-child(3)  .caption-text span{
+        color: rgb(0, 195, 255);
+            }
+.myLeftSlides:nth-child(5)  .caption-text span{
+        color: rgb(255, 0, 234);
+            }
+            
+
+/*////////////////////////////////INSIDE MIDDLE BOX ///////////////////////////////////////////////////////////////////////////
+//////////////////////*/
+
+#middleBox{
+    flex-direction: column;
+    justify-items: flex-start;
+    justify-content: flex-start;
+}
+
+#middleBox .header{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+#middleBox .header .headersearch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.headersearch #searchBox{
+    border: 1px solid #f1d6d6;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .3);
+    border-radius: 5px;
+    transition: all .1s ease-in;
+    
+}
+
+#searchbtn{
+    margin-top: .2em;
+    font-size: 1.2em;
+    color: rgb(58, 57, 57);
+}
+
+#searchbtn:hover{box-shadow: 2px 2px 2px 2px #f1d6d6;
+                color: rgb(111, 0, 255);}
+
+.headersearch #searchBox:hover{
+    box-shadow: 2px 2px 2px 2px rgba(97, 83, 83, 0.7);
+}
+.headersearch #searchBox:focus{background: #f1d6d6;
+        border-radius: 10px;
+        border: 1px solid #fff;
+        box-shadow: 1px 1px 1px 1px rgba(14, 0, 0, 0.5);
+    }
+
+    /*BARS BUTTONSS......................*/
+
+#barsbtnRight{
+    visibility: hidden;
+    position: absolute;  
+    right: .2rem;
+    top: .2rem; 
+    }
+
+.display-container{ 
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #f1d6d6;
+}
+
+/*My favouritesssss...............*/
+
+.display-container .Favourite{
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 0 1vw;
+    height: 30vh;
+    background: url(image/bg/pyramidFooterHover.svg);
+    width: calc(100% - 2vw);
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease-in-out;
+    position: relative;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    
+}
+.display-container .Favourite:hover{
+        background: url(./image/bg/greenLayerRoad.svg);
+        background-position: top;
+        }
+
+ 
+.display-container .Favourite .favs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 90%;
+    height: 5vh;
+    top: 0;
+    font-size: 1rem;
+}
+
+.Calculate-And-Pay:hover{
+                box-shadow: 2px 2px 2px 2px rgb(228, 164, 164);
+                border: transparent;
+                border-radius: 10px;}
+                
+ .Calculate-And-Pay:hover strong{ color: rgb(255, 136, 0);}
+
+.favs .Calculate-And-Pay{
+                font-size: 1rem;
+                font-weight: lighter;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-shrink: 2;
+                color: rgb(0, 102, 255);
+                width: 30%;
+                text-decoration: none;
+                font-weight: bolder;
+            }
+
+.display-container .Favourite .favs h4{color: hsla(16, 100%, 50%,.8);
+                            font-family: "lucida blackletter", "Poppins", sans-serif;
+                            margin: 0;
+                            position: absolute;
+                            right: .5rem;
+                            font-size: 1.1rem;
+                            font-weight: lighter;
+                            width: 60%;
+                            flex-shrink: 4;
+                        }
+
+ .display-container .Favourite .total{
+    width: 70%;
+    align-self: center;
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 2;
+    overflow: hidden;
+    color: #000;
+    border-radius: 20px;
+    background: rgba(247, 182, 231, 0.4);
+    position: absolute;
+    top: 5vh;
+    height: 1.5rem;
+
+    }
+
+/*small Devices here///////////////////////*/
+@media (max-width: 700px) {
+    .display-container .Favourite .total{
+        width: 95%;}
+    
+    } 
+
+.display-container .Favourite:hover .total{
+        width: 95%;
+        background: rgba(247, 182, 231, 0.6);
+
+    }
+
+ .display-container .Favourite .total .total-box1{
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 3;
+    justify-content: flex-start;
+    align-items: center;
+    background: transparent;
+    margin-right: 3rem;
+
+}
+
+
+
+.display-container .Favourite .total .total-box2{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-grow: 2;
+    flex-shrink: 3;
+    justify-content: flex-start;
+    align-items: center;
+    background: transparent;
+
+}
+
+.display-container .Favourite .total .text{
+margin-right: 1rem;
+font-size: 1rem;
+font-style: oblique;
+flex-shrink: 3;
+}
+
+.display-container .Favourite .total  .number{
+font-size: 1rem;
+flex-shrink: 3;
+}
+
+.display-container .Favourite #Buy-list{
+            background: blueviolet;
+            top: calc(5vh + 1.5rem);
+            list-style-type: none;
+            position: absolute;
+            overflow-y: none !important;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            overflow-x: auto;
+            flex-shrink: 2;
+            box-sizing: border-box;
+            height: calc(30vh - (1.5rem + 5vh));
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            
+}
+
+.display-container .Favourite #Buy-list .fav-links{ /* the a links in shopping cart///////////////////////////////*/
+    width: 8rem;
+    height: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin: 0 .5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background: transparent;
+    box-sizing: border-box;
+    position: relative;
+    background: transparent;
+}
+
+
+.Favourite #Buy-list .fav-links .circle-Img{
+    border: 2px solid #ffffff;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 2px #3333331a;
+    height: 4rem;
+    width: 4rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    object-fit: cover;
+    top: 0;
+}
+
+.Favourite #Buy-list .fav-links .clear{
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    color: red;
+    font-size: .6rem;
+}
+.Favourite #Buy-list .fav-links:hover .clear{
+    color: rgb(251, 255, 0);
+}
+
+.Favourite #Buy-list .fav-links span{
+    font-size: .8rem;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+.Favourite:hover #Buy-list .fav-links span{
+    color:rgb(0, 255, 255);
+    
+}
+
+.Favourite #Buy-list .fav-links .productName{
+    flex-grow: 0;
+    flex-shrink: 1;
+    font-family: "pippins", sans-serif;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+    align-items: center;
+    background: transparent;
+    top: 4.1rem;
+
+}
+@media (max-width: 700px) {
+    .Favourite #Buy-list .fav-links .productName{
+                top: 4.5rem;
+            } 
+    .Favourite #Buy-list .fav-links .priceNumber{
+    
+        bottom: 1rem;
+        }
+   
+}
+
+.Favourite #Buy-list .fav-links .priceNumber{
+    font-weight: bolder;
+    color: #000;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 1;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+    align-items: center;
+    background: transparent;
+    bottom: 0.2rem;
+}
+
+
+/*.....display ----TV-----.............*/
+.display-container .display-TV {
+    margin: 0 1vw 1vw 1vw;
+    padding-top: 2vh;
+    background: #f1d6d6;
+    width: calc(100% - 2vw);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    flex-shrink:0;
+    justify-content: center;
+    align-items: center;
+    height: 43vh;
+    
+
+}
+
+.display-TV  .displayData{
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+    flex-grow: 0;
+    width: 35vh;
+    margin-right: 1vw;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    margin-bottom: 2vh;
+    background: transparent;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 2px 2px 2px 2px rgba(44, 44, 46, 0.3);
+}
+
+.display-TV  .displayData:hover{
+    transform: scale(1.05);
+    z-index: 1;
+    box-shadow: 2px 2px 2px 2px rgba(1, 1, 34, .7);
+}
+
+@media (max-width: 768px) {
+
+.display-TV  .displayData{
+    width: calc(100% - 4vw);
+    margin-right: 0;
+    flex-shrink: 1;
+}
+
+.display-TV  .displayData:hover{
+    margin: 1vw 1vw 1vw 1vw;
+    box-shadow: 2px 2px 2px 2px rgba(1, 1, 34, .7);
+}
+   
+}
+
+
+.display-TV  .displayData .thumbnails{
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    top: 0;
+}
+.display-TV  .displayData .item-nameBox{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    background: #f1d6d6;
+    align-items: center;
+    bottom: 20%;
+}
+
+.display-TV  .displayData .amount{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    background: #fabebe;
+    font-size: .6rem;
+
+}
+
+.display-TV  .displayData .amount .price{
+    flex: 1 1 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 2%;
+    }
+
+.display-TV  .displayData .amount .price .priceNumber{
+    margin-left: 1rem;
+}
+
+.display-TV  .displayData .amount #Purchase{
+    flex: 2 2 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    text-decoration: none;
+}
+
+.display-TV  .displayData .amount #Purchase .Calculate-And-Pay{margin-left: 1rem;
+                                                                text-decoration: none;
+                                                                font-weight: bolder;
+                                                                flex-shrink: 2;}
+
+.display-TV  .displayData .amount #Purchase .buy-more{display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                text-decoration: none;
+                                                font-weight: bolder;
+                                                flex-shrink: 2;}
+
+
+
+.display-TV  .displayData .amount #Purchase .buy-more:hover .fa-shopping-cart{color: blue;}
+
+
+
+/* this CLASS DOWN WILL BE ..........TOGGLED.......... IN JAVASCRIPT---------IF HEART IF CLICKEDDD-------------------------*/
+
+.addToCartButton{
+        color: orangered;
+        font-size: 1.5em;
+    }
+
+.fa-shopping-cart{
+    color: #f1d6d6;
+    font-size: 1.5em;
+    flex-shrink: 1;
+    margin-right: .5em;
+}
+
+/*smaller devices below 600px------------------ */
+
+@media (max-width: 600px) {
+    .display-container .Favourite .total .total-box1{
+        
+        margin-right: 1.5rem;
+    }
+
+}
+/*Small heiht screen below height of 600px ///////////////////////////////*/
+
+@media (max-height: 600px) {
+    
+    #Buy-list .fav-links .circle-Img{
+     position: absolute;
+      top: -1rem !important;
+        }
+
+   
+    #Buy-list .fav-links .productName{
+        top: 40% !important;
+
+    }
+
+    #Buy-list .fav-links .priceNumber{
+        top: 4.8rem !important;
+
+    }
+
+
+}
+/*smaller media below height of 580px  ///////////////////////////////*/
+@media (max-height: 580px) {
+    
+    #Buy-list .fav-links .circle-Img{
+     position: absolute;
+      top: 0 !important;
+        }
+
+   
+    #Buy-list .fav-links .productName{
+        top: 55% !important;
+
+    }
+
+    #Buy-list .fav-links .priceNumber{
+        top: 60% !important;
+
+    }
+
+
+}
+
+/*small media like below 320px of width//////////////////*/
+
+@media (max-width: 320px) {
+    #logobtn{
+            display: none;
+        } 
+
+    body{
+            overflow-y: auto;
+        }
+    .favs .Calculate-And-Pay{
+        width: 50%;
+        margin-left: -1rem !important;
+
+    }
+
+    .Calculate-And-Pay{font-size: 10px !important;
+            }
+
+    .favs .h4{
+        font-size: 10px !important;  
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+         
+        }
+
+    #middleBox #searchbtn{
+        font-weight: 5px !important;
+    }
+
+    #searchBox{
+        height: 1rem;
+        }
+
+    #total span{ font-size: 10px !important;}
+
+    .display-container .Favourite .total .total-box1{
+            
+        margin-right: 1rem;
+    }
+
+    #Buy-list .fav-links .circle-Img{
+        width: 30px !important;
+        height: 30px !important;
+        }
+
+    #Buy-list .fav-links span{
+            font-size: 10px !important;
+        }
+        
+    #Buy-list .fav-links .productName{
+        top: 30px !important;
+
+    }
+
+    #Buy-list .fav-links .priceNumber{
+        top: 80% !important;
+
+    }
+
+    #displayTV .price strong{
+        font-size: 10px !important;
+
+    }
+    
+    #displayTV .item-nameBox .productName{
+        font-size: 12px !important;
+    }
+
+     #displayTV .price .priceNumber{
+        font-size: 10px !important;
+        
+    }
+    #displayTV #Purchase .buy-more{
+         font-size: 10px!important;
+     }
+     .footer-container .info-box{
+         font-size: .7rem !important;
+     }
+     .copyright-text {
+        font-size: .7rem !important;
+
+     }
+
+}
+
+/*///////////////////////////////////////////////POPUP CONTAINERSSSSSSS////////////////////////////////////////////////////////////*/
+
+
+/*.....................POP-UP BOX FOR IMG---------------XXXXXXXX*/
+
+.popup-container{
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    background: rgba(0, 0, 0, .9);
+    top: -5vh;
+    right: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    bottom: 0;
+    padding: 2rem;
+}
+
+.popup-container .popUp{
+    background: rgba(231, 231, 231, 0.8);
+    color: #000;
+    overflow-y: auto;
+    height: 95%;
+    width: 80%;
+    border-radius: 2%;
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    justify-content: center;
+    align-items: flex-start;
+    box-shadow: 1px 1px 1px 1px rgb(0, 255, 255);
+}
+
+@media (max-width: 700px) {
+    .popup-container .popUp{
+        height: 95%;
+        width: 100vw !important;}
+
+
+}
+
+.popup-container .popUp .fa-close:hover{
+    color: blue;
+    font-size: 5rem;
+    position: absolute;
+    background: #fd0000;
+}
+
+
+.popup-container .popUp .fa-close{
+    color: rgb(197, 19, 19);
+    font-size: 1.5rem;
+    position: absolute;
+    background: #00fd37;
+    right: 1rem;
+    top: 1rem;
+}
+
+.popup-container .popUp .popUpTVContainer{
+    position: absolute;
+    display: flex;
+    flex-grow: 2;
+    flex-shrink: 2;
+    top: 1rem;
+    right: 1rem;
+    left: 1rem;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    height: 80%;
+    width: 100%;
+
+}
+
+.popUpTVContainer .TVpopUp{
+    background: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 4;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+}
+
+.popUpTVContainer .TVpopUp .differentimages{
+    width: 100%;
+    height: 84%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent; 
+}
+
+.popUpTVContainer .TVpopUp .popUpSlideIMG{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.popUpTVContainer .TVpopUp .productName{
+    height: 8%;
+    width: 100%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    flex-shrink: 4;
+}
+
+.popUpTVContainer .TVpopUp .popUpSliderbtn{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: flex-end;
+    background: transparent;
+    justify-content: center;
+}
+
+.popUpTVContainer .TVpopUp .popUpSliderbtn .fa{
+    font-size: 2em;
+    color: black;
+    width: 2rem;
+    height: 100%;
+    display: flex;
+    flex-shrink: 4;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1.5rem 0 1.5rem;
+}
+
+.popUpTVContainer .TVpopUp .popUpSliderbtn .fa:hover{
+background:hsla(0, 0%, 0%, .3);
+color:rgb(0, 140, 255);
+}
+
+
+.popUpTVContainer .amount{
+    background: transparent;
+    width: 20%;
+    margin: 0;
+    padding: 2rem 0 0 0;
+    cursor: pointer; 
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    font-size: 1rem;
+
+}
+.popUpTVContainer .amount .price{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 0;
+    background:transparent;
+    font-size: .9rem;
+    height: 30%;
+}
+.popUpTVContainer .amount .price:hover{
+    color: blue;
+}
+
+.amount .price .priceNumber{
+    margin-left: .5rem;
+}
+
+.popUpTVContainer .amount #Purchase{
+   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: .5rem 0 0 0;
+    border-radius: 10%;
+    flex-shrink: 1;
+    flex-grow: 0;
+    height: 40%;
+    background: transparent;
+}
+.popUpTVContainer .amount #Purchase .Calculate-And-Pay{
+    width: 80%;
+    flex-shrink: 2;
+    display: flex;
+    font-weight: bolder;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;}
+
+.amount #Purchase strong:hover{color: blue;}
+
+.amount #Purchase .fa-shopping-cart{
+        margin-left: 1rem;
+        font-size: 2rem;
+        flex-shrink: 3;
+    }
+
+    
+.amount #Purchase .buy-more:hover{
+    color: blue;
+    }
+.amount #Purchase .buy-more:hover .fa-shopping-cart{
+    color: blue;
+    }
+
+.amount #Purchase strong{
+    flex-grow: 0;
+    flex-shrink: 2;
+    background: transparent;
+}
+
+.ordothis{
+    width: 100%;
+    height: 5%;
+    font-size: 1rem;
+    color: black;
+    display: flex;
+    flex-shrink: 3;
+    justify-content: center;
+    align-items: center;
+    font-family: "lucida blackletter", sans-serif;
+}
+
+
+
+.popup-container .popUp .productDetails{
+    padding-top: .5rem;
+    position: absolute;
+    right: 1rem;
+    flex-grow: 1;
+    flex-shrink: 2;
+    flex-wrap: wrap;
+    bottom: 0;
+    left: 1rem;
+    display: flex;
+    flex-shrink: 4;
+    font-family: "poppins", sans-serif;
+    font-size: 1em;
+    background-color: transparent;
+    height: calc(100% - (70% + 3rem));
+}
+.popup-container .popUp .productDetails strong{
+margin-bottom: .5rem;
+}
+
+/*///////////////////////////////////////////////POPUP FORM CONTAINER  TWO////////////////////////////////////////////////////////////*/
+
+
+/*.....................POP-UP  FORM FOR CUSTOMERS---------------XXXXXXXX*/
+
+
+.customerFormBox {
+    
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    overflow: hidden;
+    background: rgba(25, 1, 131, 0.9);
+    top: -5vh;
+    right: 0;
+    left: 0;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 3;
+    bottom: 2vh;
+    padding: 0;
+}
+
+
+.customerFormBox > .h3{
+        display: flex;
+        background: transparent;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 1;
+        padding: .6rem;
+        font-weight: bolder;
+        width: 100%;
+        position: relative
+    }
+
+.customerFormBox> h3 .fa-user{margin-right: 2rem;}
+
+.customerFormBox  #closeFrom{
+    position: absolute;
+    right: 1rem;
+}
+.customerFormBox  #closeFrom:hover{
+    color: red;
+
+}
+
+/*form of user or client----------------------------------------------------------------*/
+
+.customerFormBox  .formMenu {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 1;
+    align-items: flex-start;
+    height: 80%;
+}
+
+.customerFormBox  .formMenu .listSubMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: transparent;
+    width: 100%;
+    flex-shrink: 1;
+}
+
+.customerFormBox  .formMenu .listSubMenu li{
+    width: 90% !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    background: transparent;
+    flex-shrink: 3;
+}
+
+
+.customerFormBox  .formMenu .listSubMenu .customerContact{
+    display: flex;
+    flex-direction: column;
+   
+    }
+
+.customerFormBox  .formMenu .listSubMenu .customerAdress{
+    display: flex;
+    flex-direction: column;
+    }
+
+
+.customerFormBox  .formMenu .listSubMenu li label{
+    width: 100%;
+    margin: .3rem 0 .3rem 0;
+    flex-shrink: 3;
+    flex-wrap: wrap;
+    display: flex;
+    position: relative;
+    align-items: center;
+    position: relative;
+}
+
+
+.customerFormBox  .formMenu .listSubMenu li label input{
+   flex-shrink: 4; 
+   position: absolute;
+   flex-grow: inherit;
+   border: transparent;
+   box-shadow: 1px 1px 1px 1px rgba(5, 5, 245, .5);
+   border-radius: 5px;
+   width: 60%;
+   font-family: "poppins", sans-serif;
+   color: blue;
+   font-weight: bolder;
+   right: 2vw;
+   height: 1.5rem;
+}
+
+.customerFormBox  .formMenu .listSubMenu .submitDataBox{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customerFormBox  .formMenu .listSubMenu .submitDataBox button{
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .5);
+}
+
+.customerFormBox  .formMenu .listSubMenu .submitDataBox button:hover{
+    background: rgba(175, 172, 172, .5);
+    color: hsl(240, 100%, 50%); 
+}
+
+
+
+/*///////////////// payment process popup. ....////////////////////////////////////*/
+.paymentPage{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    overflow: hidden;
+    background: #f1d6d6;
+    top: -6vh;
+    right: 0;
+    left: 0;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 4;
+    padding: 0;
+    bottom: 0;
+    margin: 1px solid blue;
+    border-radius: 5vw;
+}
+
+#formPayment{
+    margin: none;
+    border-radius: 3vw;
+}
+
+@media (max-height: 600px) {
+    .paymentPage{
+        overflow-y: auto;
+    }
+    .paymentChoice{
+        overflow-y: auto;
+    }
+}
+
+.paymentHeader{
+    display: flex;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+    padding: .6rem;
+    font-weight: bolder;
+    width: 100%;
+    position: relative
+}
+
+
+.paymentHeader #closePayment{
+    position: absolute;
+    right: 1rem;
+}
+.paymentHeader #closePayment:hover{
+    color: yellow;
+}
+
+.paymentHeader .Paymentcontainer{
+    display: flex;
+    flex-shrink: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.methodBox{
+    display: flex;
+    flex-shrink: 1;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.methodBox .btn{
+    flex-shrink: 3;
+    margin-right: 1rem;
+    box-shadow: 1px 1px 1px 1px rgb(173, 3, 117);
+    background: white;
+    font-family: "poppins", sans-serif;
+    font-size: 1rem !important;
+    color: black;
+    }
+    
+.methodBox .btn:hover{
+    background: #666866;
+    }
+
+/*payment choicessss---------------------*/
+
+.paymentChoice{
+    overflow: hidden;
+    height: 70%;
+    visibility: hidden;
+    border-radius: 4vw;
+    }
+
+
+.paymentSecret{
+    height: 70%;
+    width: 70%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-family: "poppins", sans-serif;
+    font-size: 1rem !important;
+    border-radius: 5%;
+    box-shadow: 0 0 .1rem .1rem blue;
+    }
+
+@media (max-width: 992px) {
+    .paymentSecret{
+        width: 100%;
+        
+    } 
+}
+
+#paymentSecretAIRTEL{
+    background: rgb(255, 9, 9);
+    color: white ;
+
+    }
+
+#paymentSecretMTN{
+    background: yellow;
+    color: black;
+    }
+
+#paymentSecretBANK{
+    background: green;
+    color: black;
+    }
+
+
+/*Last box ///////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////*/
+
+#lastBox{
+    flex-direction: column;
+
+}
+
+
+
+#lastBox .fa-close{
+    flex-shrink: 1;
+    margin: 5px auto 0 5px;
+    padding: 0;
+    flex-grow: 0;
+    background: transparent;
+}
+#lastBox .fa-close:hover{ color: rgb(75, 75, 12)}
+
+#lastBox .companyNameBox{
+    flex-shrink: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: transparent;
+    margin: 0;
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+#lastBox .addressAndLocationBox{
+    margin: 0;
+    padding: 1rem;
+    background: transparent;
+    flex-shrink: 1;
+    flex-wrap: nowrap;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column-reverse;
+}
+/*companyName......box..............*/
+
+.companyNameBox .GuraBuyName{
+    font-family: "poppins";
+    animation: grow 2s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    top: -1rem;
+    left: 50%;
+}
+
+@keyframes grow {
+    50%{ color: rgb(2, 6, 12, .7);}
+    75%{ color: rgb(221, 164, 164, .7);}
+    100%{color: rgb(0, 0, 255,.6);}
+    
+    
+}
+.companyNameBox .details{
+    flex-grow: 1;
+    flex-shrink: 2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    opacity: .7;
+    font-style: oblique;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    }
+.companyNameBox .details .whatWeDo{
+    font-size: .9rem;
+    display: flex;
+    width: 100%;
+    height: 9rem;
+    flex-shrink: 5;
+    flex-grow: 0;
+
+}
+
+
+.companyNameBox .details .treatment {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    bottom: 0;
+}
+
+.companyNameBox .details .treatment strong{
+   opacity: 1;
+   background: rgba(104, 103, 103,.2);
+    font-family: "lucida-blackletter";
+    flex-wrap: wrap;
+    flex-shrink: 3;
+    color: black; 
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 7px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .4);}
+
+/* aaddressAndLocationBox.............here down................*/
+.companyNameBox .addressAndLocationBox .first-Location{
+    display: flex;
+    flex-shrink: 2;
+    flex-wrap: wrap;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    align-items: center;
+    background: transparent;
+    position: absolute;
+    left: 0;
+
+}
+.first-Location h5{color: black;
+                text-decoration: underline;
+                text-decoration-color: blueviolet;
+                flex-shrink: 5;
+                text-decoration-style: double;}
+
+#italic{font-style: oblique;
+        font-variant: small-caps;
+        opacity: .9;
+        text-decoration: none;
+        font-size: 1rem;}
+
+
+.videoBox{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.addressAndLocationBox .videoBox #videoplay{
+    background: rgba(201, 176, 176, .4);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .7);
+    color: blue;
+    text-decoration: none;
+    font-size: 1em;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-shrink: 4;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    position: relative;
+}
+
+.addressAndLocationBox .videoBox #videoplay::after{
+    content: '';
+    height: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation: borderVideo1 2s infinite alternate;
+    width: 5rem;
+    border: 1rem solid rgb(12, 8, 247, .8);
+    transition-delay: 1s;
+}
+
+.addressAndLocationBox .videoBox #videoplay::before{
+    content: '';
+    height: 7rem;
+    width: 7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation: borderVideo2 2s infinite alternate;
+    border: 1rem solid rgb(12, 8, 247, .8);
+    transition: 2s;
+   
+}
+
+.addressAndLocationBox .videoBox span{position: absolute;
+                                    color: black;
+                                    font-weight: bolder;
+                                    font-size: 1.2em;
+                                    font-style: italic;
+                                    font-family: "lucida blackletter";
+                                    right: 1rem;}
+@keyframes borderVideo1 {
+    0%{ opacity: 1;
+        height: 5rem;
+        width: 5rem;}
+
+       100%{ opacity: 0.1;
+            height: 7rem;
+            width: 7rem;}
+    
+}
+
+@keyframes borderVideo2 {
+    0%{ opacity: 0;
+        height: 7rem;
+        width: 7rem;}
+
+       100%{ opacity: 1;
+            height: 5rem;
+            width: 5rem;}
+    
+}
+
+
+
+
+#videoplay .video {background: transparent;
+            object-fit: contain;
+            max-width: 50%;
+            position: absolute;
+            max-height: 50%;}
+
+
+/*when we hover over the video.......................*/
+
+.addressAndLocationBox .videoBox #videoplay:hover ~ .videoBox span{color: blue;}
+.addressAndLocationBox .videoBox #videoplay:hover{
+    background: #fff;
+    box-shadow: 5px 5px 5px 5px grey;
+    color: rgb(0, 217, 255);
+    transform: rotate(360deg);
+}
+.addressAndLocationBox .videoBox #videoplay:active{
+    color: #fd0000;
+}
+
+
+
+/*Lastly----------FOOTER-----------------------------------
+////////////////////////////////////////////////////////////////*/
+
+
+.footer-container{
+    transition: all .1s ease-in-out;
+    background: rgba(1, 1, 34, .6); 
+    
+}
+
+.footer-container:hover{
+    font-weight: bolder;
+    font-style: oblique;
+}
+.footer-container a{color: blue;}
+
+.footer-container:hover a{color: black;
+                        font-weight: bolder;}
+
+/* footer box*/
+.footer-Wrapper{
+    background: transparent; 
+}
+
+.company-Adress{
+    background: transparent;
+}
+
+
+
+.company-Adress .footer-single-info{
+    background: transparent 
+    }
+.company-Adress .footer-single-info:last-child .social-link{ 
+    display: flex ;
+    justify-content: space-evenly;
+
+}
+
+
+.singleInfo-3 .fa-facebook {
+    color: blue;
+    flex-shrink: 3;
+}
+.singleInfo-3 .fa-facebook:hover{
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .3);
+}
+.singleInfo-3 .fa-instagram {
+    color: rgb(206, 78, 78);
+    flex-shrink: 3;
+}
+.singleInfo-3 .fa-instagram:hover{
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .3);
+}
+.singleInfo-3 .fa-whatsapp {
+    color: green;
+    flex-shrink: 3;
+}
+.singleInfo-3 .fa-whatsapp:hover{
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .3);}
+
+
+.company-Adress .singleInfo-1 .info-box{
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    }
+
+.singleInfo-1 .fa-phone{
+    color: green;
+}
+.singleInfo-1 a:hover{ text-decoration: underline;
+                    text-decoration-color: red;}
+
+.singleInfo-2 a:hover{ text-decoration: underline;
+                    text-decoration-color: red;}
+
+
+
+.company-Adress .singleInfo-2 .info-box{
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    }
+    
+/*cpy right box---------------------------*/
+
+.copyright-box{
+    background: transparent; 
+    width: 100vw;
+                    }
+
+.footer-copyright{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+.footer-copyright p.copyright-text{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: .7rem;
+    background: rgba(1, 1, 34, .3);
+}
+.footer-copyright p .fa-heart{color: blue;
+                    font-size: 1em;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 1em 0 2em;}
+
+.footer-copyright p a{
+    font-weight: bolder;
+    font-size: 1.2em;
+    margin: 0 1em 0 1em;
+    color: green;
+}
+.footer-copyright p a:hover{
+    font-weight: lighter;
+    color: rgb(16, 2, 43);
+}
+.footer-copyright p strong{color: cyan;
+                            background: transparent;
+                            display: flex;
+                            flex-wrap: nowrap;
+                            font-size: 1em;}
+
+ /*SMALL SCREENS ON FOOTER
+
+        @media (max-width: 800px) {
+
+            .company-Adress{
+                display: flex;
+                flex-direction: column;
+                font-size: .8rem;
+                background: rgba(1, 1, 34, .9);
+            }
+            .company-Adress .footer-single-info .info-box{
+                width: 100vw;
+                display: flex;
+                flex-grow: 1;
+                background: rgba(1, 1, 34, .9);
+                justify-content: flex-start;
+                align-items: flex-start  
+            }
+            .company-Adress .footer-single-info .info-box:last-child{
+                display: flex;
+                justify-content: space-evenly; 
+                font-size: .8rem;
+            }
+            .copyright-text{
+                display: flex;
+                background: rgba(1, 1, 34, .9); 
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;  
+                width: 100vw;
+
+                }/*
+            .copyright-text a{
+                background: rgba(1, 1, 34, .6);
+                justify-content: flex-start;
+                align-items: flex-start; 
+                width: 100%; 
+                }
+            .copyright-text strong{
+                background: rgba(1, 1, 34, .9);
+                justify-content: flex-start;
+                align-items: flex-start;  
+                width: 100vw;
+
+                }
+        }
+*/
+
+
